@@ -88,6 +88,7 @@ jobs:
         
     - name: Validate model training
       run: |
+        cd src
         ls -la *.joblib
         python -c "import joblib; model = joblib.load('model.joblib'); print(f'Model type: {type(model).__name__}'); print(f'Model coef shape: {model.coef_.shape}')"
         
@@ -98,6 +99,7 @@ jobs:
         
     - name: Validate quantization
       run: |
+        cd src
         ls -la *.joblib
         python -c "import joblib; params = joblib.load('quant_params.joblib'); print(f'Quantized parameters keys: {list(params.keys())}')"
         
