@@ -102,12 +102,12 @@ jobs:
         python -c "import joblib; params = joblib.load('quant_params.joblib'); print(f'Quantized parameters keys: {list(params.keys())}')"
         
     - name: Upload model artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: model-artifacts
         path: |
           model.joblib
-          scaler.joblib
+          scaler.joblibs
           unquant_params.joblib
           quant_params.joblib
         retention-days: 30
