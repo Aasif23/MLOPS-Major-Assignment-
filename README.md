@@ -68,6 +68,8 @@ This will:
 - Train a Linear Regression model
 - Print R² score and loss metrics
 - Save the trained model as `model.joblib`
+<img width="1263" height="557" alt="image" src="https://github.com/user-attachments/assets/f221e8c8-bea3-4c87-b4a3-e2ee87a938b6" />
+
 
 ### 3. Quantizing the Model
 
@@ -82,12 +84,15 @@ This will:
 - Quantize parameters to 8-bit unsigned integers
 - Save quantized parameters as `quant_params.joblib`
 - Perform inference with de-quantized weights
+<img width="1087" height="748" alt="image" src="https://github.com/user-attachments/assets/d669049c-4749-4336-af87-c5dde264401a" />
+
 
 ### 4. Running Tests
 
 ```bash
 pytest tests/ -v
 ```
+<img width="1607" height="431" alt="image" src="https://github.com/user-attachments/assets/5f1f01bc-9132-421b-98ca-ae5ded7fd1ab" />
 
 ### 5. Docker Deployment
 
@@ -97,6 +102,17 @@ docker build -t ml-model .
 
 # Run Docker container
 docker run ml-model
+```
+<img width="1485" height="682" alt="image" src="https://github.com/user-attachments/assets/2c2df5fd-a82f-40dc-b45f-61b8f2ef931f" />
+
+
+### 🐳 DockerHub Image
+
+You can pull the latest Docker image from [DockerHub](https://hub.docker.com/r/aasifali231/ml-model/tags):
+
+```bash
+docker pull aasifali231/ml-model
+docker run --rm aasifali231/ml-model
 ```
 
 ## CI/CD Pipeline
@@ -143,38 +159,6 @@ Unit tests cover:
 - R² score threshold validation
 - Parameter extraction for quantization
 
-## Development Guidelines
-
-1. **Code Quality**: Follow PEP 8 style guidelines
-2. **Testing**: Maintain >90% test coverage
-3. **Documentation**: Document all functions and classes
-4. **Version Control**: Use semantic versioning
-5. **CI/CD**: Ensure all pipeline jobs pass before merging
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Import Errors**: Ensure virtual environment is activated
-2. **Test Failures**: Check dataset loading and model training
-3. **Docker Build Fails**: Verify Dockerfile syntax and dependencies
-4. **Quantization Errors**: Ensure model is trained before quantization
-
-### Performance Tips
-
-1. Use joblib for efficient model serialization
-2. Implement early stopping for large datasets
-3. Consider feature scaling for better convergence
-4. Monitor memory usage during quantization
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Ensure all tests pass
-6. Submit a pull request
 
 ## License
 
