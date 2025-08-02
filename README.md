@@ -129,7 +129,7 @@ The pipeline is triggered on every push to the main branch.
 |--------|-------|
 | Model Type | Linear Regression |
 | Dataset | California Housing (sklearn) |
-| R² Score | ~0.60 (typical) |
+| R² Score | ~0.57 (typical) |
 | Features | 8 numerical features |
 | Target | Median house value |
 
