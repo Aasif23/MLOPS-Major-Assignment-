@@ -68,8 +68,7 @@ This will:
 - Train a Linear Regression model
 - Print R² score and loss metrics
 - Save the trained model as `model.joblib`
-<img width="1263" height="557" alt="image" src="https://github.com/user-attachments/assets/f221e8c8-bea3-4c87-b4a3-e2ee87a938b6" />
-
+<img width="626" height="148" alt="image" src="https://github.com/user-attachments/assets/6941673d-05e8-41fc-b6e7-1fd2fa1d9370" />
 
 ### 3. Quantizing the Model
 
@@ -84,8 +83,7 @@ This will:
 - Quantize parameters to 8-bit unsigned integers
 - Save quantized parameters as `quant_params.joblib`
 - Perform inference with de-quantized weights
-<img width="1087" height="748" alt="image" src="https://github.com/user-attachments/assets/d669049c-4749-4336-af87-c5dde264401a" />
-
+<img width="638" height="191" alt="image" src="https://github.com/user-attachments/assets/dfdca6eb-512a-4c63-9cd7-802f18a3bc88" />
 
 ### 4. Running Tests
 
